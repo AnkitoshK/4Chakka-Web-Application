@@ -1,0 +1,147 @@
+.homePageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto 50px;
+  flex-wrap: wrap;
+}
+
+.homeLeftSide, .homeRightSide {
+  flex: 1;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* Description and image styling */
+.homeDescription {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.homeImageSlider {
+  width: 100%;
+  height: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.homeImageSlider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Form container styling */
+.homeFormContainer {
+  background-color: rgba(64, 222, 222, 0.149);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the form horizontally */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.homeFormContainer h2 {
+  margin-bottom: 20px; /* Increased margin for better separation */
+  text-align: center;
+}
+
+/* Grouping of form fields */
+.homeGroupNames {
+  margin-bottom: 20px; /* Increased spacing between groups */
+}
+
+/* Input field and label styling */
+.homeInputWrappers {
+  position: relative;
+}
+
+.homeLabelSmall {
+  font-weight: bold;
+  font-size: 0.9em; /* Decreased font size */
+}
+
+.homeInputFields,
+.homeTextarea,
+.homeSelect {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em; /* Standard font size */
+}
+
+.homeTextarea {
+  resize: vertical;
+}
+
+.homeInputError {
+  border: 1px solid red;
+}
+
+.homeErrorMessage {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0px;
+}
+
+.homeRequired {
+  color: red;
+}
+
+/* Submit button styling */
+.homeSubmitButton {
+  background-color: #344954;
+  color: #fff;
+  padding: 12px 20px;
+  box-shadow: #2d80ad;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.homeSubmitButton:hover {
+  background-color: darkseagreen;
+}
+
+.homeSuccess {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .homePageContainer {
+    flex-direction: column;
+  }
+
+  .homeFormContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeInputFields,
+  .homeTextarea {
+    width: 100%;
+  }
+
+  .homeSubmitButton {
+    width: 100%;
+  }
+}

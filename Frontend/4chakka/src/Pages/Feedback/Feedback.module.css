@@ -1,0 +1,129 @@
+.newaddFeedbackContainer {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  height: 90vh;
+}
+
+.newaddFeedbackImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* Align image to the left */
+  align-items: center;
+  margin-right: 10px; /* Adjust spacing between image and form */
+}
+
+.newaddFeedbackImage {
+  width: 90%;
+  height: 52%;
+  border-radius: 8px;
+  margin-bottom: 311px;
+}
+
+.newaddFeedbackRightSection {
+  flex: 1;
+  background-color: rgba(64, 222, 222, 0.149);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  max-width: 550px;
+  height: 92%;
+  margin-right: 30px;
+}
+
+.newaddFeedbackForm {
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.newaddStarRating {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border: 1px solid;
+  color: black;
+  border-radius: 8px;
+  width: 100%;
+  height: 20%;
+  margin-bottom: 15px;
+  background-color: rgb(34, 203, 206);
+}
+
+.newaddStarRating input[type="radio"] {
+  display: none;
+}
+
+.newaddStarRating label {
+  font-size: 24px;
+  color: rgb(56, 24, 125);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.newaddStarRating label.newaddSelected {
+  color: gold;
+}
+
+.newaddFormGroup {
+  margin-bottom: 20px;
+}
+
+.newaddFormGroup label {
+  display: block;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.newaddInput,
+.newaddTextarea {
+  width: 100%; /* Adjust input width to match parent container */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.newaddTextarea {
+  resize: vertical;
+}
+
+.newaddInputError {
+  border: 1px solid red;
+}
+
+.newaddError {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+  position: absolute;
+  /* margin-bottom: 20px; */
+}
+
+.newaddFeedbackButton {
+  padding: 12px;
+  background-color:#344954;
+  color: white;
+  box-shadow: #2d80ad;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 25%; /* Full width button */
+  margin-top: 15px;
+}
+
+.newaddFeedbackButton:hover {
+  background-color: darkseagreen;
+}
+
+.newaddRequired {
+  color: red;
+}

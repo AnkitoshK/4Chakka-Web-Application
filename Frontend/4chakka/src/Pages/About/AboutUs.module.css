@@ -1,0 +1,87 @@
+.aboutUsContainer {
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+  
+.description {
+    margin-bottom: 20px;
+    text-align: center;
+    text-align: justify;
+}
+
+.description h2 {
+    margin-left: 5px;
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+  
+.left, .right {
+    flex: 1;
+    margin: 10px; /* Reduced margin */
+}
+
+.visionMissionImage {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px; /* Reduced margin */
+}
+
+.right h3 {
+    color: rgb(25, 220, 54);
+    margin-bottom: 1px; /* Increased margin */
+}
+
+.right p {
+    color: rgb(25, 220, 54);
+    padding: 0px 0; /* Added padding for spacing */
+}
+
+.right p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; /* Increased margin for spacing */
+}
+
+.icon {
+    margin-right: 8px;
+    color: rgb(17, 62, 209);
+    opacity: 0.5;
+}
+
+.right a {
+    color: rgb(25, 220, 54);
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        margin: 5px 0;
+    }
+
+    .visionMissionImage {
+        width: 80%; /* Adjusted for better responsiveness */
+    }
+}
